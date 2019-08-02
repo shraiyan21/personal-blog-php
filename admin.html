@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="mrgreen.php">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="mrgreen.php#who">WHO</a></li>
+        <li><a href="mrgreen.php#what">WHAT</a></li>
+        <li><a href="mrgreen.php#where">WHERE</a></li>
+        <li><a href="activity.php">ACTIVITY</a></li>
+        <li><a href="cv.php">ABOUT ME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 align="center">ADMIN PANEL</h1>
+<div style="margin-left:180px; margin-right:130px; ">
+
+  <h2 align="center"><b>Activity Control:</h2>
+<h3><u>Activity Page Image Upload: </u></h3>
+<form action="file.php" method="post" enctype="multipart/form-data">
+
+   <b> Select image to upload: <br><br> </b> <input type="file" name="fileToUpload" id="fileToUpload"><br>
+    Image Title: <input type="text" name="imgname"><br> <br>
+    Image Details: <textarea name="imagedetails" rows="3" cols="50" placeholder="Write your Image Details."></textarea><br> <br>
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+
+
+  <h3><u>Activity Page Image Delete:</u></h3>
+<form action="delete.php" method="post">
+
+   <b> Select image to Delete: <br><br> </b> <input type="text" name="text" placeholder="Write Exect title of Image"><br>
+    
+    
+    <input type="submit" value="Delete Image" name="delete">
+</form>
+
+</div>
+</body>
+</html>
